@@ -1,9 +1,13 @@
-import { Controller, Post } from '@nestjs/common';
+import { Controller, Patch, Post } from '@nestjs/common';
 
 @Controller('cashier')
 export class CashierController {
     @Post()
-    createSalesRecord(){
-        console.log('Tu registro de ventas se ha creado correctamente');
+    createSalesRecord() {
+        return 'Tu registro de ventas se ha creado correctamente';
+    }
+    @Patch('update-cash-registrer')
+    updateSalesRecord() {
+        return 'Se realizo un movimiento de efectivo';
     }
 }
