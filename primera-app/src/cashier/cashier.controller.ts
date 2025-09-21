@@ -12,7 +12,7 @@ export class CashierController {
     }
     @Get(':name')
     getCoffee(@Param('name') name: string) {
-        return 'Se retorna un café con la orden ' + name;
+        return 'Se retorna el café para ' + name;
     }
 
 
