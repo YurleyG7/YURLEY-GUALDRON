@@ -1,4 +1,4 @@
-import { Controller, Patch, Post } from '@nestjs/common';
+import { Controller, Get, Param, Patch, Post } from '@nestjs/common';
 
 @Controller('cashier')
 export class CashierController {
@@ -10,4 +10,10 @@ export class CashierController {
     updateSalesRecord() {
         return 'Se realizo un movimiento de efectivo';
     }
+    @Get(':name')
+    getCoffee(@Param('name') name: string) {
+        return 'Se retorna un café con la orden ' + name;
+    }
+
+
 }

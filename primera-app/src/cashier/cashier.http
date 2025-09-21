@@ -1,2 +1,3 @@
 POST http://localhost:3000/cashier
 PATCH http://localhost:3000/cashier/update-cash-registrer
+GET http://localhost:3000/cashier/Yurley
