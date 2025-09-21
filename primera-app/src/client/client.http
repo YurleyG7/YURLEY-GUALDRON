@@ -1,2 +1,2 @@
-GET http://localhost:3000/client
 POST http://localhost:3000/client
+DELETE http://localhost:3000/client/15/Yurley
