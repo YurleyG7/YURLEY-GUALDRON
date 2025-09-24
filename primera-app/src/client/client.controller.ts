@@ -11,7 +11,7 @@ export class ClientController {
     deleteSalesRecord(@Param('id') id:number, @Param('name') name:string ) {
         return (
             'Se elimino el registro del café con id' + 
-            id + 
+            id +  
             'y se pauso la venta:' +
             name
         );
