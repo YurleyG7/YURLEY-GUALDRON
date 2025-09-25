@@ -18,12 +18,12 @@ function parqueaderoMotos() {
     let total = 0;
 
     // Pedimos cuántas motos trae el cliente
-    let numMotos = parseInt(prompt("¿Cuántas motos vas a parquear? "));
+    let numMotos = parseInt(prompt("¿Cuántas motos vas a estacionar? "));
 
     // Usamos un bucle for para registrar cada moto
     for (let i = 1; i <= numMotos; i++) {
       // Solicitamos las horas de parqueo para la moto actual
-      let horas = parseInt(prompt(`Horas de la moto ${i}: `));
+      let horas = parseInt(prompt(`Cuántas horas vas a estacionar ${i}: `));
 
       // Usamos switch para asignar precio según las horas
       switch (horas) {
@@ -48,11 +48,11 @@ function parqueaderoMotos() {
     console.log("El total a pagar es: $" + total);
 
     // Preguntamos si hay otro cliente y actualizamos la condición del while
-    otroCliente = prompt("¿Hay otro cliente? (si/no): ").toLowerCase();
+    otroCliente = prompt("¿Atenderas otro cliente? (si/no): ").toLowerCase();
   }
 
   // Mensaje final cuando ya no hay más clientes
-  console.log("Gracias por usar el parqueadero de Yurley 🏍️");
+  console.log("Gracias por visitar el parqueadero de Yurley 🏍️");
 }
 
 // Llamamos la función para iniciar el programa
